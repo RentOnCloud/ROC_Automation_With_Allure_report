@@ -11,6 +11,7 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 import Base.TestBase;
+import io.qameta.allure.Allure;
 
 /* this code is developed by prithwiraj */
 /* this class is developed For Dashboard recognation */
@@ -59,6 +60,7 @@ public class HomePage extends TestBase {
 		try {
 			Boolean homepagebuttons=Update_Profile.isDisplayed() && Activate_webpage.isDisplayed();
 			System.out.println(homepagebuttons);
+			
 			if(homepagebuttons) {
 				
 				System.out.println("Home page has Update Profile and Activate webpage buttons");	

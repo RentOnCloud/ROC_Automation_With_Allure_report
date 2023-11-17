@@ -89,7 +89,7 @@ public class TestBase {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd hh-mm-ss");		
 //		htmlReporter= new ExtentSparkReporter(new File(System.getProperty("user.dir") +"/Reports/"+className+"-"+dateFormat.format(new Date())+".html"));
 		htmlReporter= new ExtentHtmlReporter(new File(System.getProperty("user.dir") +"/Reports/"+className+"-"+dateFormat.format(new Date())+".html"));
-	
+		
 		
 		reports=new com.aventstack.extentreports.ExtentReports();
 		reports.setSystemInfo("Environment", "Test Env");
@@ -219,8 +219,8 @@ public class TestBase {
 		{
 			System.out.println("Closing All Tabs for the Browser.");
 			
-			driver.close();
-			driver.quit();
+			//driver.close();
+			//driver.quit();
 		}
 	}
 

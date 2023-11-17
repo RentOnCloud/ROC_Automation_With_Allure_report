@@ -1,8 +1,12 @@
 package TestCases;
 
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -12,6 +16,7 @@ import Pages.HomePage;
 import Pages.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 
 /* this code is developed by prithwiraj */
 /* this class is developed for Home page */
@@ -38,6 +43,6 @@ public class T002_home_page extends TestBase{
 	}
 	/* this class is developed for quiting driver */
 	
-
+	
 
 }

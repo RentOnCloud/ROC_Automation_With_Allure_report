@@ -21,6 +21,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 import Base.TestBase;
 import Utility.ReadExcelFile;
+import io.qameta.allure.Allure;
 
 /* this code is developed by prithwiraj */
 /* this class is developed for Login to application*/
@@ -65,7 +66,7 @@ public class LoginPage extends TestBase{
 		String Usernamefromexcel=ReadExcelFile.Readexcelusername();
 		username.sendKeys(Usernamefromexcel);
 		logger.log(Status.PASS, MarkupHelper.createLabel(" User has successfully given username", ExtentColor.GREEN));
-		
+		Allure.step("this is prithvi01");
 		
 		
 		driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
