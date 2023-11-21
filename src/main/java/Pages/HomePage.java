@@ -65,12 +65,14 @@ public class HomePage extends TestBase {
 				
 				System.out.println("Home page has Update Profile and Activate webpage buttons");	
 				logger.log(Status.PASS, MarkupHelper.createLabel(" User has has Update Profile and Activate webpage buttons", ExtentColor.GREEN));
+				Allure.step("Home page has Update Profile and Activate webpage buttons");
 			}
 		
 
 		} catch(Exception e) {
 
 			System.out.println("User is not in Home page.");
+			Allure.step("Home page does not have Update Profile and Activate webpage buttons");
 			
 			
 		}

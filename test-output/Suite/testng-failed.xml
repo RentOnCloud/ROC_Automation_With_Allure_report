@@ -3,39 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestCases.T008_add_deposit_page">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="Validate"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
-          <include name="setupReport"/>
-          <include name="CreateDir"/>
-          <include name="register"/>
-        </methods>
-      </class> <!-- TestCases.T008_add_deposit_page -->
-      <class name="TestCases.T004_Add_new_user_page">
+      <class name="TestCases.T002_home_page">
         <methods>
           <include name="getResult"/>
-          <include name="launchBrowser"/>
-          <include name="Validate"/>
           <include name="tearDown"/>
-          <include name="setupReport"/>
+          <include name="Validate"/>
           <include name="CreateDir"/>
-          <include name="register"/>
-        </methods>
-      </class> <!-- TestCases.T004_Add_new_user_page -->
-      <class name="TestCases.T007_add_Transaction_page">
-        <methods>
-          <include name="Validate"/>
-          <include name="getResult"/>
-          <include name="tearDown"/>
           <include name="setupReport"/>
           <include name="launchBrowser"/>
-          <include name="CreateDir"/>
           <include name="register"/>
         </methods>
-      </class> <!-- TestCases.T007_add_Transaction_page -->
+      </class> <!-- TestCases.T002_home_page -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

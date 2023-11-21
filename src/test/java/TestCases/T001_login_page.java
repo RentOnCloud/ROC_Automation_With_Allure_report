@@ -77,10 +77,10 @@ public class T001_login_page extends TestBase {
 	//Assert.assertFalse(true);
 		
 		//driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/form/div[2]/button")).click();
-		//Allure.step("this is prithvi02");
+		//Allure.step("user has successfully login at ROC");
 		//Allure.step("that", Status.FAILED);
 		//Allure.addAttachment("Any text", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-		driver.quit();
+		//driver.quit();
 		
 	}
 

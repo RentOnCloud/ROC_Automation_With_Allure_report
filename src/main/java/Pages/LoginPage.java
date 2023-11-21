@@ -66,7 +66,7 @@ public class LoginPage extends TestBase{
 		String Usernamefromexcel=ReadExcelFile.Readexcelusername();
 		username.sendKeys(Usernamefromexcel);
 		logger.log(Status.PASS, MarkupHelper.createLabel(" User has successfully given username", ExtentColor.GREEN));
-		Allure.step("this is prithvi01");
+		Allure.step("user has successfully given username at ROC");
 		
 		
 		driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
@@ -76,6 +76,7 @@ public class LoginPage extends TestBase{
 		String passwordfromexcel=ReadExcelFile.Readexcelpassword();
 		password.sendKeys(passwordfromexcel);
 		logger.log(Status.PASS, MarkupHelper.createLabel(" User has successfully given password", ExtentColor.GREEN));
+		Allure.step("user has successfully given password at ROC");
 		driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
 		enterbutton.click();
 		logger.log(Status.PASS, MarkupHelper.createLabel(" User has successfully enter roc", ExtentColor.GREEN));
@@ -93,6 +94,7 @@ public class LoginPage extends TestBase{
 		driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
 		Asserts.check(homePageHeading.equalsIgnoreCase("Home"), homePageHeading);
 		System.out.println("User has successfully logged in");
+		Allure.step("user has successfully logged in at Dashboard of ROC");
 		logger.log(Status.PASS, MarkupHelper.createLabel(" User has successfully logged in", ExtentColor.GREEN));
 		
 		

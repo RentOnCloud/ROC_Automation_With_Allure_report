@@ -1,5 +1,6 @@
 package Base;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 
@@ -34,6 +35,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Allure;
 
 /* this code is developed by prithwiraj */
 /* this class is developed for base information */
@@ -218,8 +220,9 @@ public class TestBase {
 		if(driver!=null)
 		{
 			System.out.println("Closing All Tabs for the Browser.");
-			
-			//driver.close();
+			Allure.step("user has successfully login at ROC");
+			Allure.addAttachment("Any text", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+			driver.close();
 			//driver.quit();
 		}
 	}
